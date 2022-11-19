@@ -10,7 +10,7 @@ spring:
   #通用数据源配置
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/gray_server?charset=utf8mb4&useSSL=false
+    url: jdbc:mysql://localhost:3306/gray_server?charset=utf8mb4&useSSL=false&time&serverTimezone=Asia/Shanghai
     username: root
     password: root
     # Hikari 数据源专用配置
@@ -24,7 +24,7 @@ spring:
     show-sql: true
     generate-ddl: true
     hibernate:
-      ddl-auto: update
+      ddl-auto: create
   rabbitmq:
     addresses: 127.0.0.1:5672
     username: admin
